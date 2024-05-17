@@ -21,7 +21,7 @@
             align-items: center;
         }
         header img {
-            height: 50px;
+            height: 60px;
         }
         nav {
             background-color: #002060;
@@ -49,22 +49,31 @@
             display: block;
             color: white;
             text-decoration: none;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
         }
         .content {
             flex: 1;
             padding: 20px;
             background-color: white;
+            display: flex;
+            flex-wrap: wrap;
         }
         .content img {
             max-width: 100%;
             height: auto;
         }
-        .content h1 {
-            font-size: 24px;
-        }
-        .content .info, .content .report {
+        .info, .report {
             margin-bottom: 20px;
+        }
+        .info {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+        .report {
+            flex: 1;
+            min-width: 300px;
         }
         footer {
             background-color: #002060;
@@ -96,8 +105,8 @@
             <a href="#">Ansprechpartner</a>
         </div>
         <div class="content">
-            <h1>Meine Liegenschaft</h1>
             <div class="info">
+                <h1>Meine Liegenschaft</h1>
                 <img src="property.jpg" alt="Liegenschaft">
                 <p>WEG Musterstraße 1</p>
                 <p>55122 Mainz</p>
